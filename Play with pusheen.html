@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Play with Pusheen |Pusheen </title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/gallery.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="img/img-thing.jpeg" title="Pusheen logo" alt="Pusheen logo"/>
+		</div>
+		<!-- end logo -->
+
+		<div id="menu_icon"></div>
+	 <div class="container">
+      	<ul>
+         <li><a href="homepage.html">Pusheen's Home</a></li>
+         <li><a href="about.html">About Pusheen</a></li>
+        <li><a href ="Pusheen's%20gallery.php">Pusheen's Gallery</a>
+            <li><a href ="Pusheen%20in%20Real%20World.html">Pusheen in Real World</a>
+         <li><a href="http://www.pusheen.com/">Official Website</a></li>
+        </ul>
+      </div>   
+        
+        
+        <div id="play">
+            <button onclick = "myFunction()">Click Me To Get Surprise! </button>
+            <div id="image"></div>
+            
+           
+        <script>
+            var imageArray = new Array();
+            imageArray[0] = new Image();
+            imageArray[0].src= "img/2.jpg";
+            
+            imageArray[1] = new Image();
+            imageArray[1].src= "img/1.jpg";
+            
+            imageArray[2] = new Image();
+            imageArray[2].src= "img/3.jpg";
+            
+            imageArray[3] = new Image();
+            imageArray[3].src= "img/4.jpg";
+            
+            imageArray[4] = new Image();
+            imageArray[4].src= "img/5.jpg";
+            
+            imageArray[5] = new Image();
+            imageArray[5].src= "img/6.gif";
+                
+            function myFunction(){
+             var number= Math.floor(Math.random()*imageArray.length); 
+            document.getElementById("image").appendChild(imageArray[number]);
+                
+            }
+            
+            </script>
+            
+
+</div>
+
+	</header><!-- end header -->
+    
+    </body>
+</html>
